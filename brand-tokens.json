@@ -1,0 +1,337 @@
+{
+  "name": "Calici Alti",
+  "version": 1,
+  "color": {
+    "themes": [
+      {
+        "id": "light",
+        "name": "Tovaglia (light)"
+      },
+      {
+        "id": "dark",
+        "name": "Sera (dark)"
+      }
+    ],
+    "tokens": [
+      {
+        "name": "bg",
+        "value": {
+          "light": "#ffffff",
+          "dark": "#100e0d"
+        },
+        "usage": "Page background. White like the tablecloths by day; the black of the sign in the dark theme."
+      },
+      {
+        "name": "bg-lino",
+        "value": {
+          "light": "#f3efe8",
+          "dark": "#1b1816"
+        },
+        "usage": "Paper panels: menu cards, form fields, the text side of a split. Never a whole page."
+      },
+      {
+        "name": "nero",
+        "value": {
+          "light": "#100e0d",
+          "dark": "#100e0d"
+        },
+        "usage": "The black of the arched sign. Full-width bands (hours, contact, footer) and the logo ground. Same in both themes."
+      },
+      {
+        "name": "ink",
+        "value": {
+          "light": "#151210",
+          "dark": "#f4efe7"
+        },
+        "usage": "Headlines and body text on `bg` and `bg-lino`."
+      },
+      {
+        "name": "ink-muted",
+        "value": {
+          "light": "#5f5852",
+          "dark": "#b7aea4"
+        },
+        "usage": "Dish descriptions, captions, secondary lines on `bg` and `bg-lino`."
+      },
+      {
+        "name": "on-nero",
+        "value": {
+          "light": "#f4efe7",
+          "dark": "#f4efe7"
+        },
+        "usage": "Text on `nero` bands and over dark photos."
+      },
+      {
+        "name": "line",
+        "value": {
+          "light": "#e4ddd2",
+          "dark": "#35302c"
+        },
+        "usage": "Hairline dividers between menu items and sections. Never for controls."
+      },
+      {
+        "name": "rosso",
+        "value": {
+          "light": "#a3191f",
+          "dark": "#c42b33"
+        },
+        "usage": "Wine red. Full-bleed hero and poster bands, giant headline type, the primary button, the red block behind one photo. Used boldly, not as a trace."
+      },
+      {
+        "name": "bordeaux",
+        "value": {
+          "light": "#4e0f14",
+          "dark": "#4e0f14"
+        },
+        "usage": "Deep wine. Full-bleed poster bands (like the Lolo reference), the menu page ground, the footer. Text on it is `on-nero`; giant type on it is `rosso` or `oro-on-nero`."
+      },
+      {
+        "name": "rosso-text",
+        "value": {
+          "light": "#a3191f",
+          "dark": "#f0837b"
+        },
+        "usage": "Red text and links on `bg` and `bg-lino`: prices, the accent word, hover states."
+      },
+      {
+        "name": "on-rosso",
+        "value": {
+          "light": "#ffffff",
+          "dark": "#ffffff"
+        },
+        "usage": "Text and icons on a `rosso` fill."
+      },
+      {
+        "name": "oro",
+        "value": {
+          "light": "#c29a55",
+          "dark": "#d2ad69"
+        },
+        "usage": "Champagne gold for the ring, its dot and hairline rules only. Decorative: on white it is 2.6:1, so never use it for text or for anything that must be read on `bg`."
+      },
+      {
+        "name": "oro-text",
+        "value": {
+          "light": "#866326",
+          "dark": "#d9b878"
+        },
+        "usage": "Gold text: eyebrows and small labels on `bg` and `bg-lino`. Body copy is never gold."
+      },
+      {
+        "name": "oro-on-nero",
+        "value": {
+          "light": "#d2ad69",
+          "dark": "#d2ad69"
+        },
+        "usage": "Gold text, rules and the ring on `nero` bands (9:1)."
+      },
+      {
+        "name": "focus",
+        "value": {
+          "light": "#a3191f",
+          "dark": "#f0837b"
+        },
+        "usage": "Keyboard focus ring: 2px solid, 3px offset, on every interactive element."
+      }
+    ]
+  },
+  "type": {
+    "fonts": [],
+    "families": {
+      "display": "\"Gloock\", \"Bodoni 72\", Didot, Georgia, serif",
+      "script": "\"Pinyon Script\", \"Snell Roundhand\", cursive",
+      "sans": "\"Instrument Sans\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    "groups": [
+      {
+        "name": "Display",
+        "family": "display",
+        "styles": [
+          {
+            "name": "display-poster",
+            "fontSize": "240px",
+            "lineHeight": 0.82,
+            "fontWeight": 400,
+            "letterSpacing": "-0.02em",
+            "sample": "CALICI",
+            "usage": "Giant type that sits behind or around a plate photo, edge to edge (hero, poster bands). Uppercase. clamp(96px, 19vw, 280px). One per page."
+          },
+          {
+            "name": "display-xl",
+            "fontSize": "120px",
+            "lineHeight": 0.9,
+            "fontWeight": 400,
+            "letterSpacing": "-0.01em",
+            "sample": "MENU",
+            "usage": "Page titles, uppercase, often in `rosso`. clamp(64px, 10vw, 140px)."
+          },
+          {
+            "name": "display-l",
+            "fontSize": "72px",
+            "lineHeight": 0.95,
+            "fontWeight": 400,
+            "letterSpacing": "0",
+            "sample": "La cucina",
+            "usage": "Section headlines, sentence case. clamp(44px, 6vw, 80px)."
+          },
+          {
+            "name": "display-m",
+            "fontSize": "40px",
+            "lineHeight": 1.05,
+            "fontWeight": 400,
+            "letterSpacing": "0",
+            "sample": "Domus Romana",
+            "usage": "Card and event titles."
+          }
+        ]
+      },
+      {
+        "name": "Script",
+        "family": "script",
+        "styles": [
+          {
+            "name": "script-accent",
+            "fontSize": "72px",
+            "lineHeight": 1,
+            "fontWeight": 400,
+            "sample": "Ristorante",
+            "usage": "ONE script word or short phrase per page, overlapping a headline or photo edge, in `oro` on dark or `rosso-text` on white (Seppe, Little Italy). Never sentences, menus or buttons. clamp(40px, 6vw, 88px)."
+          }
+        ]
+      },
+      {
+        "name": "Text",
+        "family": "sans",
+        "styles": [
+          {
+            "name": "eyebrow",
+            "fontSize": "13px",
+            "lineHeight": "16px",
+            "fontWeight": 600,
+            "letterSpacing": "0.2em",
+            "sample": "RISTORANTE · LUCCA",
+            "usage": "Uppercase labels above headlines and in poster corners."
+          },
+          {
+            "name": "lede",
+            "fontSize": "21px",
+            "lineHeight": "31px",
+            "fontWeight": 400,
+            "sample": "Cucina toscana tradizionale, preparata espressa.",
+            "usage": "One or two intro sentences. Max 40 characters wide."
+          },
+          {
+            "name": "body",
+            "fontSize": "17px",
+            "lineHeight": "28px",
+            "fontWeight": 400,
+            "sample": "Pasta fresca fatta in casa e tartufo grattugiato al momento.",
+            "usage": "Running text. Max 60 characters wide."
+          },
+          {
+            "name": "menu-item",
+            "fontSize": "20px",
+            "lineHeight": "27px",
+            "fontWeight": 500,
+            "sample": "Tagliolini al tartufo fresco",
+            "usage": "Dish names, category names, lists."
+          },
+          {
+            "name": "small",
+            "fontSize": "15px",
+            "lineHeight": "22px",
+            "fontWeight": 400,
+            "sample": "Pane croccante, pomodorini, cetrioli e basilico",
+            "usage": "Dish descriptions and captions in `ink-muted`."
+          },
+          {
+            "name": "button",
+            "fontSize": "14px",
+            "lineHeight": "16px",
+            "fontWeight": 600,
+            "letterSpacing": "0.14em",
+            "sample": "PRENOTA SU WHATSAPP",
+            "usage": "Buttons and nav, uppercase."
+          }
+        ]
+      }
+    ]
+  },
+  "spacing": {
+    "tokens": [
+      {
+        "name": "space-1",
+        "value": "4px",
+        "usage": "Icon to label."
+      },
+      {
+        "name": "space-2",
+        "value": "8px",
+        "usage": "Eyebrow to headline; name to description in a menu item."
+      },
+      {
+        "name": "space-3",
+        "value": "16px",
+        "usage": "Inside buttons (vertical), between menu items, mobile side gutter."
+      },
+      {
+        "name": "space-4",
+        "value": "24px",
+        "usage": "Headline to lede; between buttons; card padding."
+      },
+      {
+        "name": "space-5",
+        "value": "40px",
+        "usage": "Lede to buttons or content; desktop gutter between columns."
+      },
+      {
+        "name": "space-6",
+        "value": "64px",
+        "usage": "Section padding on mobile; desktop side gutter."
+      },
+      {
+        "name": "space-7",
+        "value": "104px",
+        "usage": "Section padding on desktop. Clamp it down so each section still fits one screen."
+      }
+    ]
+  },
+  "radius": {
+    "tokens": [
+      {
+        "name": "radius-none",
+        "value": "0",
+        "usage": "Photos, bands, buttons, cards. The brand is square."
+      },
+      {
+        "name": "radius-sm",
+        "value": "2px",
+        "usage": "Form fields and tabs only."
+      },
+      {
+        "name": "radius-round",
+        "value": "50%",
+        "usage": "The plate photo inside the ring, the ring's dot, and round plate cut-outs."
+      }
+    ]
+  },
+  "size": {
+    "tokens": [
+      {
+        "name": "hairline",
+        "value": "1px",
+        "usage": "Rules, dividers and the ring stroke."
+      },
+      {
+        "name": "header-h",
+        "value": "72px",
+        "usage": "Fixed header height. Sections fit calc(100svh - header-h); anchors use it as scroll-margin-top."
+      },
+      {
+        "name": "measure",
+        "value": "64ch",
+        "usage": "Max width of running text."
+      }
+    ]
+  }
+}
